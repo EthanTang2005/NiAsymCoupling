@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+.verification-*/
+
+# Scientific data is distributed in the GitHub Release asset.
+data/
+NiAsymCoupling-v2.0.0.zip
+NiAsymCoupling-v2.0.0.zip.sha256

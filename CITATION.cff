@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this version of NiAsymCoupling and the original publications/data providers relevant to the records you use."
+type: dataset
+title: "NiAsymCoupling: literature-only public derivative"
+authors:
+  - family-names: Tang
+    given-names: Yichen
+version: 2.0.0
+date-released: 2026-10-10
+url: "https://github.com/EthanTang2005/NiAsymCoupling"
+repository-code: "https://github.com/EthanTang2005/NiAsymCoupling"
+abstract: "Literature-derived source-result rows for nickel asymmetric coupling, with a nickel C(sp2)-C(sp3) main scope, a broader archive, source observations, molecular representations, conditions, selectivity labels, and inherited quality flags. This public derivative excludes local laboratory results and is not the full private frozen v2 baseline. License grants cover only curator-controlled original contributions; see LICENSING.md for scope and upstream notices."

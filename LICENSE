@@ -1,0 +1,21 @@
+NiAsymCoupling license scope
+Copyright (c) 2026 Yichen Tang, for original contributions.
+
+Original project code in scripts/, examples/, and schema.sql is licensed
+under the MIT License in LICENSES/MIT.txt.
+
+Original documentation, curation and annotations, and compilation/database
+rights actually controlled by Yichen Tang, are licensed under Creative
+Commons Attribution 4.0 International (CC BY 4.0), whose full legal text is
+in LICENSES/CC-BY-4.0.txt.
+
+These grants extend only to rights the licensor controls. They do not
+relicense third-party protected material or establish that upstream
+permissions have been verified. Facts and other material not subject to
+the applicable rights do not acquire new restrictions from these licenses.
+Nothing here limits uses allowed independently of these grants.
+
+See LICENSING.md for the precise scope and observed upstream terms, and
+THIRD_PARTY_NOTICES.md for retained attribution and notices. The supplied
+third-party license text in LICENSES/SigmanGroup-MIT.txt is the upstream
+notice, not a license grant by this project.

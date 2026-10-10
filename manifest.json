@@ -1,0 +1,54 @@
+{
+  "release_id": "v2.0.0",
+  "status": "prepared_for_public_release",
+  "created_on": "2026-10-10",
+  "baseline": {
+    "relative_path": "deliverables/NiAsymCoupling_v2_2026-10-07/NiAsymCoupling_v2.sqlite",
+    "sha256": "ada489cddda9bb948f044e0a558df82de5a4eb2340b1910c07a04606fab07c9d",
+    "metadata_version": "1.4.66",
+    "metadata_as_of": "2026-10-07"
+  },
+  "database": {
+    "path": "data/NiAsymCoupling_v2_public.sqlite",
+    "sha256": "3e7360f0f686ea8c3be1883df623d05d1305f989d8b09beaf3fc43e10fbdbec4"
+  },
+  "counts": {
+    "metadata": 12,
+    "papers": 137,
+    "source_files": 124,
+    "molecules": 6080,
+    "datasets": 34,
+    "records": 7935,
+    "required_substrate_status": 4596,
+    "experiment_components": 20272,
+    "dataset_memberships": 17083,
+    "source_observations": 6567,
+    "observation_quality_flags": 1576,
+    "record_quality_flags": 8114,
+    "open_quality_issues": 4598,
+    "duplicate_pairs": 329,
+    "input_structure_evidence": 9736,
+    "stock_representation_caveats": 16,
+    "reported_value_details": 370,
+    "main_scope_records": 4596,
+    "main_scope_numeric_ee": 4416,
+    "archive_records": 3339,
+    "numeric_ee_with_required_structures": 3608,
+    "main_scope_without_open_duplicate_flags": 4269
+  },
+  "exclusion": {
+    "local_experiment_result_rows": 36,
+    "all_linked_local_only_material": "excluded"
+  },
+  "statistical_unit": "source-result rows and separate source observations; do not sum the two",
+  "rights_review": "Scoped grants cover only curator-controlled rights; original upstream status fields remain not_verified_for_redistribution; no blanket relicense of facts or third-party protected material",
+  "reproducibility": "logical rows and allowlisted projections are deterministic; SQLite file bytes may vary across SQLite versions",
+  "version": "2.0.0",
+  "repository": "https://github.com/EthanTang2005/NiAsymCoupling",
+  "download_url": "https://github.com/EthanTang2005/NiAsymCoupling/releases/download/v2.0.0/NiAsymCoupling-v2.0.0.zip",
+  "source_candidate": {
+    "release_id": "v2-public-literature-2026-10-08-candidate",
+    "database_sha256": "046b69e1e7592b5810390de17c644e9cad66dfde463c66170ce62e7937d13eb8"
+  },
+  "release_transition": "Scientific tables and seven CSV files unchanged from the reviewed 2026-10-08 public candidate; release metadata, documentation and scoped licenses updated"
+}
