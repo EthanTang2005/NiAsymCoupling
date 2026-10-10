@@ -1,0 +1,28 @@
+# Provenance and selection
+
+The immutable input is the user-designated v2 at `deliverables/NiAsymCoupling_v2_2026-10-07/NiAsymCoupling_v2.sqlite`, SHA-256 `ada489cddda9bb948f044e0a558df82de5a4eb2340b1910c07a04606fab07c9d`, internal `metadata.version=1.4.66`, `as_of=2026-10-07`. The public derivative does not replace that project baseline.
+
+The builder excludes a result when any of its curation, original-measurement or method-paper links points to a `local_experiment` paper, including `P_LOCAL_G0`. It retains every other source-result row, including qualitative, failed, unresolved-origin, outside-scope and scope-pending literature-derived rows. It does not infer unpublished status merely from an unidentified original reference: such rows can be traceable to a public author compilation, and retain `original_reference_unidentified=1`.
+
+Only reachable datasets, source files, papers and molecular graph entities are carried into the new database. A molecule used in both local and published records remains as a scientific graph; global molecule names, source locators and notes are omitted because they can contain local annotations. Public record-level source labels remain available. No PDF, SI image, raw workbook, original source document, internal audit history, private path, raw record JSON or free-text notes field is included.
+
+`records.paper_id` is the curation/compilation source. `original_paper_id` and `original_doi` describe the assigned original measurement source when available; `method_paper_id` describes the protocol reference. These roles are not interchangeable. Source file URLs and original hashes support retrieval but do not mean that source documents are bundled or that redistribution rights are confirmed. Access status was copied from the frozen source and was not freshly rechecked for every URL.
+
+Scope and structure flags are materialized from `v_scope_assessment`, `v_scope_target_records` and `v_verified_required_substrate_status` **before** raw JSON and audit history are omitted. This preserves the original view semantics, including cases where reactant-SMILES fallback is deliberately disabled. The simplified public views depend solely on the resulting public columns. The inherited verification flags describe earlier curation evidence; they do not assert a new independent source audit at release time.
+
+`source_observations` preserves author-table values separately from source-result rows, including original author ligand/product SMILES, labels, temperature, ee and energy labels. Their signed values and literal product stereochemistry are not converted into verified major-enantiomer assignments. A preferred observation is the minimum author number per record and dataset, consistent with the source view; this is a selection convention rather than proof of superior evidence.
+
+Reported replicate and rounded/reprinted value variants are normalized in `reported_value_details`; they are not promoted into additional independent result rows. The public result keeps the selected frozen-v2 value. Dataset `reported_size` and `extracted_size` are historical source metadata and may differ from current public membership counts. Count current membership explicitly; never sum overlapping datasets as unique experiments.
+
+`input_structure_evidence.source_locator_anchor` contains only compact source filename/page/table anchors extracted from longer internal evidence locators. The full original locator may contain lengthy source quotations and is not redistributed. The exact result locator, source DOI, source file ID and source hash are retained separately. Identical public evidence rows across internal batches are collapsed by a deterministic row hash; numeric result records are never averaged.
+
+Open quality issue type/severity codes and duplicate-pair statuses are retained without internal narrative histories. Structured stock-representation caveats explicitly carry zero strict-completion credit; detailed candidate ensemble definitions are omitted. Consult the cited source before treating an unresolved ensemble or incomplete graph as a chemically exact charged input.
+
+Two explicitly reviewed stereochemistry descriptions are summarized into factual status codes: the source-defined 93:7 E/Z mixed stock, and N-Boc-leucine with unassigned alpha configuration. Their scientific uncertainty is preserved; a direct SI quotation and an internal-policy reference are removed. `stereo_status_public_summarized=1` records these exceptions. Private local-system comparison tokens are removed from `review_status`, while all other quality tokens remain; `review_status_public_sanitized=1` records that transformation. These are deliberate publication edits rather than changes to scientific values or completeness flags.
+
+
+## Transition to public release version 2.0.0
+
+The 2026-10-10 package derives from the independently reviewed 2026-10-08 public candidate, whose database SHA-256 was `046b69e1e7592b5810390de17c644e9cad66dfde463c66170ce62e7937d13eb8`. All 16 scientific tables and all seven CSV files retain their prior content. Only the database's release-identification/license-scope metadata changes; document, citation, download and scoped license files are updated separately. No source-verification, quality or rights-applicability flag is upgraded by this release transition. The private frozen source remains unchanged.
+
+The GitHub repository contains code, documentation, schema and manifest. The complete data package is distributed as the v2.0.0 Release asset, not through GitHub's automatic source-code ZIP. The public verifier works after downloading and extracting that complete asset; reconstructing the public projection requires the exact private source snapshot.
